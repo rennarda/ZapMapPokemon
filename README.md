@@ -9,6 +9,7 @@ A junior iOS developer wrote a Pokemon app according to the [requirements (descr
 Whilst the app is functional, it is not written in a way that is testable or flexible for future changes.
 
 We would like you to try and improve it by doing the following:
+
 - Make sure all requirements are met correctly, and fix any issues found.
 - Refactor the code so it is clean and testable.
 - Make sure the code is written so that in the future, we could easily switch to use different 3rd party libraries.
@@ -18,6 +19,7 @@ We would like you to try and improve it by doing the following:
 - Document the approach to your changes, and anything else you would change if you had more time.
 
 Rules:
+
 - Don't change any code in the ZoogleAnalytics package
 - Don't add any more functionality, we want the code to be ready for more features, but not for them to be added.
 - Don't add any more third party libraries
