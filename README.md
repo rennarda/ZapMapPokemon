@@ -10,11 +10,13 @@ Whilst the app is functional, it is not written in a way that is testable or fle
 
 We would like you to try and improve it by doing the following:
 
+**We completely understand if you do not have time to complete everything, if there was anything you would have done if you had more time, please document it.**
+
 - Make sure all requirements are met correctly, and fix any issues found.
 - Refactor the code so it is clean and testable.
 - Make sure the code is written so that in the future, we could easily switch to use different 3rd party libraries.
 - Make sure the code is written so that in the future, we could easily add a database backup for the Pokemon data.
-- Add unit tests, reaching a high level of coverage.
+- Add unit tests, the higher the coverage the better.
 - Bonus: make sure the code is written so that the list and details code don't know about each other.
 - Document the approach to your changes, and anything else you would change if you had more time.
 
