@@ -25,6 +25,7 @@ We would like to improve it so that:
 2. Demonstrate your automated testing skills by implementing some of your suggested changes whilst adding lots of tests. We recommend you choose an area harder to test so you can show off your testing skills.
 
 Rules:
+
 - Don't change any code in the ZoogleAnalytics package.
 - Don't code any more functionality, we want the code to be ready for more features, but not for them to be added.
 - Don't add any more third party libraries.
