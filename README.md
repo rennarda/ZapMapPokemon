@@ -1,31 +1,33 @@
-# Zap-Map Senior iOS Developer Task
+# Zapmap Lead iOS Developer Task
 
-This is a development task for a Senior iOS role at Zap-Map. If you have any questions, please email benrosen@zap-map.com.
+This is a planning/development task for a Lead iOS role at Zap-Map. 
 
-## The task
+We are using this task to see if you can design code in a way that is highly decoupled to allow future changes, as well as assessing your knowledge of writing automated tests.
+
+If you have any questions, please email benrosen@zap-map.com.
+
+## Background
 
 A junior iOS developer wrote a Pokemon app according to the [requirements (described in a following section)](#the-pokemon-app-requirements).
 
 Whilst the app is functional, it is not written in a way that is testable or flexible for future changes.
 
-We would like you to try and improve it by doing the following:
+We would like to improve it so that:
 
-**We completely understand if you do not have time to complete everything, if there was anything you would have done if you had more time, please document it.**
+* We can easily switch to use different 3rd party libraries
+* We can easily add a database backup for the Pokemon data.
+* The list and details code can exist in separate feature modules.
+* BONUS: We can easily switch from UIKit to SwiftUI with as little code change as possible.
 
-- Make sure all requirements are met correctly, and fix any issues found.
-- Refactor the code so it is clean and testable.
-- Make sure the code is written so that in the future, we could easily switch to use different 3rd party libraries.
-- Make sure the code is written so that in the future, we could easily add a database backup for the Pokemon data.
-- Add unit tests, the higher the coverage the better.
-- Bonus: make sure the code is written so that the list and details code don't know about each other.
-- Document the approach to your changes, and anything else you would change if you had more time.
+## The task
+
+1. Document how we can achieve the above mentioned improvements, making the codebase decoupled and flexible for future change. This can be a document in any format, we would expect to see architecture and class diagrams.
+2. Demonstrate your automated testing skills by implementing some of your suggested changes whilst adding lots of tests. We recommend you choose an area harder to test so you can show off your testing skills.
 
 Rules:
-
-- Don't change any code in the ZoogleAnalytics package
-- Don't add any more functionality, we want the code to be ready for more features, but not for them to be added.
-- Don't add any more third party libraries
-- Keep using UIKit
+- Don't change any code in the ZoogleAnalytics package.
+- Don't code any more functionality, we want the code to be ready for more features, but not for them to be added.
+- Don't add any more third party libraries.
 
 ## The Pokemon App Requirements
 
