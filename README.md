@@ -17,7 +17,9 @@ We would like to improve it so that:
 * We can easily switch to use different 3rd party libraries
 * We can easily add a database backup for the Pokemon data.
 * The list and details code can exist in separate feature modules.
+* We can easily change features and functionality with feature flags/entitlements.
 * BONUS: We can easily switch from UIKit to SwiftUI with as little code change as possible.
+* BONUS: We can easily add analytics and logging without modifying the classes that contain the logic.
 
 ## The task
 
