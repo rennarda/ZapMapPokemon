@@ -8,7 +8,7 @@
 import UIKit
 import ZoogleAnalytics
 
-class PokemonListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class PokemonListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PokemonList
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

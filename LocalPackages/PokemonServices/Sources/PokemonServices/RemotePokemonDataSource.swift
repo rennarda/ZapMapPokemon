@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RemotePokemonDataSource {
+public class RemotePokemonDataSource {
 
     enum Error: Swift.Error {
         case couldNotCreateUrl
@@ -25,7 +25,7 @@ class RemotePokemonDataSource {
         return urlComponents
     }()
 
-    func getPokemonList(offset: Int = 0, limit: Int = 20, completion: @escaping (Result<RemotePokemonList, Swift.Error>) -> Void) {
+    public func getPokemonList(offset: Int = 0, limit: Int = 20, completion: @escaping (Result<RemotePokemonList, Swift.Error>) -> Void) {
         var urlComponents = baseURLComponents
         urlComponents.path.append("pokemon")
         urlComponents.queryItems = [URLQueryItem(name: "offset", value: String(offset)),
@@ -39,7 +39,7 @@ class RemotePokemonDataSource {
         url.fetch(completion: completion)
     }
 
-    func getPokemonDetails(id: String, completion: @escaping (Result<RemotePokemonDetails, Swift.Error>) -> Void) {
+    public func getPokemonDetails(id: String, completion: @escaping (Result<RemotePokemonDetails, Swift.Error>) -> Void) {
         var urlComponents = baseURLComponents
         urlComponents.path.append("pokemon/\(id)/")
 
