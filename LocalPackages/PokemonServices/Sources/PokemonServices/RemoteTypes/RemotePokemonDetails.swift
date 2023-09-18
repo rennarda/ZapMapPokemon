@@ -6,7 +6,7 @@
 //
 import Foundation
 
-struct RemotePokemonDetails: Decodable {
+public struct RemotePokemonDetails: Decodable {
     let name: String
     let weight: Int
     let height: Int
@@ -14,15 +14,15 @@ struct RemotePokemonDetails: Decodable {
     let sprites: RemotePokemonSprites
 }
 
-struct RemotePokemonType: Decodable {
+public struct RemotePokemonType: Decodable {
     let slot: Int
     let type: RemotePokemonTypeResource
 }
 
-struct RemotePokemonTypeResource: Decodable {
+public struct RemotePokemonTypeResource: Decodable {
     let name: String
 }
 
-struct RemotePokemonSprites: Decodable {
+public struct RemotePokemonSprites: Decodable {
     let frontDefault: URL
 }

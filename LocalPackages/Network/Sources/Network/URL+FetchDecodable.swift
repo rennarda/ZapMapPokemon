@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
     func fetch<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
         URLSession.shared.dataTask(with: self) { data, response, error in
             guard let data = data, error == nil else {

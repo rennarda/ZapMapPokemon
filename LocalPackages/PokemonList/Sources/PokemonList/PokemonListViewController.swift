@@ -7,6 +7,7 @@
 
 import UIKit
 import ZoogleAnalytics
+import PokemonServices
 
 public class PokemonListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -27,7 +28,7 @@ public class PokemonListViewController: UIViewController, UITableViewDelegate, U
         tableView.register(UINib(nibName: "PokemonListItemTableViewCell", bundle: nil), forCellReuseIdentifier: pokemonItemReuseIdentifier)
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var rowCount = pokemon.count
         if morePokemonToLoad {
             rowCount += 1
@@ -35,7 +36,7 @@ public class PokemonListViewController: UIViewController, UITableViewDelegate, U
         return rowCount
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
 
         if indexPath.row >= pokemon.count {
@@ -52,7 +53,7 @@ public class PokemonListViewController: UIViewController, UITableViewDelegate, U
         return cell
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.row < pokemon.count else {
             return
         }
