@@ -1,6 +1,6 @@
 # Comments
 
-I have detailed the suggested refactoring in the [REFACTORING.md](./REFACTORING.pdf) document and the associated [Architecture diagram](./PokemonApp.pdf).
+I have detailed the suggested refactoring in the [REFACTORING.md](./REFACTORING.md) document and the associated [Architecture diagram](./PokemonApp.pdf).
 
 I have begin the suggested refactoring in this project by splitting it out in to Swift Packages, but the main app target will not currently compile until all this refactoring work is completed. I started the refactoring at the lower level with the intention of working my way 'up' the stack - so I haven't got as far as adding a view model to the view controllers, etc.
 
