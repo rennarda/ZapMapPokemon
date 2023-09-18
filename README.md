@@ -1,3 +1,18 @@
+# Comments
+
+I have detailed the suggested refactoring in the [REFACTORING.md](./REFACTORING.pdf) document and the associated [Architecture diagram](./PokemonApp.pdf).
+
+I have begin the suggested refactoring in this project by splitting it out in to Swift Packages, but the main app target will not currently compile until all this refactoring work is completed. I started the refactoring at the lower level with the intention of working my way 'up' the stack - so I haven't got as far as adding a view model to the view controllers, etc.
+
+I have shown the suggested approach to testing within the PokemonService package - this uses a new API client protocol, and the tests for the Pokemon List query are provided. The same pattern would be applied to the tests for the Detail query. 
+
+To address the bonus questions: if the view model adopted the `ObservableObject` protocol and used `@Published` properties, then this view model would work for SwiftUI view as well as UIKit ViewControllers
+
+To enable using analytics libraries without touching the code, this could be achieved with method swizzling the UIViewController methods like `ViewDidAppear` to log analytics events - although widely used this kind of approach isn't really recommended. Personally I think it would be better to have another module for Analytics that abstracted out the implementation, allowing the library to be switched if required without rewriting the calls in the code. 
+
+
+---
+Original readme:
 # Zapmap Lead iOS Developer Task
 
 This is a planning/development task for a Lead iOS role at Zap-Map. 
